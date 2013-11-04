@@ -1,0 +1,45 @@
+[info] Compiling 4 Scala sources and 3 Java sources to C:\Users\thor\PLAY\todolist\target\scala-2.10\classes...
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:16: error: cannot find symbol
+[error]     			views.html.index.render(Task.all(), taskForm)
+[error]     			                        ^
+[error]   symbol:   variable Task
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:16: error: cannot find symbol
+[error]     			views.html.index.render(Task.all(), taskForm)
+[error]     			                                    ^
+[error]   symbol:   variable taskForm
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:21: error: cannot find symbol
+[error]     	Form<Task> filledForm = taskForm.bindFromRequest();
+[error]     	^
+[error]   symbol:   class Form
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:21: error: cannot find symbol
+[error]     	Form<Task> filledForm = taskForm.bindFromRequest();
+[error]     	     ^
+[error]   symbol:   class Task
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:21: error: cannot find symbol
+[error]     	Form<Task> filledForm = taskForm.bindFromRequest();
+[error]     	                        ^
+[error]   symbol:   variable taskForm
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:24: error: cannot find symbol
+[error]     				views.html.index.render(Task.all(), filledForm)
+[error]     				                        ^
+[error]   symbol:   variable Task
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:28: error: cannot find symbol
+[error]     		Task.create(filledForm.get());
+[error]     		^
+[error]   symbol:   variable Task
+[error]   location: class Application
+[error] C:\Users\thor\PLAY\todolist\app\controllers\Application.java:29: error: cannot find symbol
+[error]     		return redirect(routes.Application.task());
+[error]     		                                  ^
+[error]   symbol:   method task()
+[error]   location: variable Application of type ReverseApplication
+[error] Note: C:\Users\thor\PLAY\todolist\app\models\Task.java uses unchecked or unsafe operations.
+[error] Note: Recompile with -Xlint:unchecked for details.
+[error] 8 errors
+[error] (compile:compile) javac returned nonzero exit code

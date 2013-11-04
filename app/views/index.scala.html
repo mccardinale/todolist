@@ -1,7 +1,11 @@
-@(message: String)
+@(tasks: List[Task], taskForm: Form[Task])
+@import helper._
 
-@main("Welcome to Play 2.1") {
+@main("Todo list") {
     
-    @play20.welcome(message, style = "Java")
-    
+    <H2>Ajouter une tache</H2>
+    @form(routes.Application.newTask()){
+    @inputText(taskForm("message"))
+    <input type="submit" value="creation">
+    }
 }
